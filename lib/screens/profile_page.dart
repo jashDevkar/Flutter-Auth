@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class Profilepage extends StatelessWidget {
   Profilepage({super.key});
 
-  AuthService authService = AuthService();
+  final AuthService authService = AuthService();
 
   void logout() async {
     await authService.logout();
